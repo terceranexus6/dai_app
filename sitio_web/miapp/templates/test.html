@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+{% load staticfiles %}
+<title>{{tittle}}</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<style>
+body,h1,h5 {font-family: "Raleway", sans-serif}
+body, html {height: 100%}
+.bgimg {
+    background-image: url('http://cinephiliamedia.files.wordpress.com/2013/12/hamlet-1.jpg');
+    min-height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+</style>
+<body>
+
+<div class="bgimg w3-display-container w3-text-red">
+  <div class="w3-display-middle w3-jumbo">
+    <p>{{tittle}}</p>
+  </div>
+  <div class="w3-display-topleft w3-container w3-xlarge">
+    <p><button onclick="document.getElementById('hamlet').style.display='block'" class="w3-button w3-black">hamlet</button></p>
+    <p><button onclick="document.getElementById('ophelia').style.display='block'" class="w3-button w3-black">ophelia</button></p>
+    <p><button onclick="document.getElementById('laertes').style.display='block'" class="w3-button w3-black">laertes</button></p>
+  </div>
+  <div class="w3-display-bottomleft w3-container">
+    <p class="w3-xlarge">{{frase}}</p>
+    <p class="w3-large">characters explained</p>
+    <p>powered by <a href="https://www.github.com/terceranexus6" target="_blank">Paula</a></p>
+  </div>
+</div>
+
+<!-- Hamlet -->
+<div id="hamlet" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom">
+    <div class="w3-container w3-black w3-display-container">
+      <span onclick="document.getElementById('hamlet').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
+      <h1>WHO</h1>
+    </div>
+    <div class="w3-container">
+      <h5><b>Hamlet</b> is the prince of Denmark. His father was recently assassinated by Fortimbras, the king's brother and Hamlet's uncle. The young prince is supposed to be a tender teenager, loving son and Ophelia's lover but he displays various moods and reactions that leads him look like a mad prince.  </h5>
+    </div>
+    <div class="w3-container w3-black">
+      <h1>PERSONALITY</h1>
+    </div>
+    <div class="w3-container">
+      <h5>As mentioned the prince displays several personalities. At first he seems to be a scared sad teen, but as soon as he discovers the truth surrounding his father's death, Hamlet is lead by anger. He prays in a soliloquo "from this time forth, my thoughts be bloody, or be nothing worth." in which he declares he pretend to sacrifice his tenderness for revenge. After Ophelia's death, he firmly declares he loved her, which makes Laertes (Ophelia's brother) confront the prince phisically. It's unclear if Hamlet truly loved the girl as he used to write and recite passionate thoughts to Ophelia but later gets angry with her and make fun about the love they apparently shared. He scares his mother, and upset her about the fact she laid with Fortimbras. Hamlet is an unclear mixture of anger, conffusion, madness and passion, and expose the two most obvious outputs for this way of being: Suicide desires, under poetry such as "To die, to sleep, perchance to dream" and the nothing to lost mood that guides him though his revenge. It's clearly seen in both soliloquos "To be or not to be" and "How all ocassions do inform against me", respectively. </h5>
+    </div>
+    <div class="w3-container w3-black">
+      <h1>DEATH</h1>
+    </div>
+    <div class="w3-container">
+      <h5>His death is almost at the same time of Laertes, as they both die sword fighting for the honor of their life and words. This death is poetically significant due to the fact Laertes is the lifelike representation of sense, against the Hamlet's chaos. The prince dies in his friend's arms under the cool statement of "he's dead". </h5>
+    </div>
+  </div>
+</div>
+
+<!-- Ophelia -->
+<div id="ophelia" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom">
+    <div class="w3-container w3-black">
+      <span onclick="document.getElementById('ophelia').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
+      <h1>WHO</h1>
+    </div>
+    <div class="w3-container">
+      <h5><b>Ophelia</b> is a delicate girl who falls in love with Hamlet under his passionate words. Her feelings are drowned in sadness and the dispair of the lack of freedom. She is Laerte's little sister. </h5>
+    </div>
+    <div class="w3-container w3-black">
+      <h1>PERSONALITY</h1>
+    </div>
+    <div class="w3-container">
+      <h5>She seems to be kind, pure and delicate, but all of this is pictured over a deep sadness. Her inocence lights under her words and feelings, and her idea if rightness stops her from breaking as free as she desires. Surrended by the idea of not reaching any freedom or love, and after loosing every sense of love in his life after her father's death, she desperately suicide in the river, letting herself drown surrounded by silver flowers she took before. She is a truly wonderful character surpassed by the situation which seemed to be too agressive for such a person. Some characters label this action as madness, and is highly understimated by some main characters, but Hamlet and Laertes takes it in a deeper way.</h5>
+    </div>
+    <div class="w3-container w3-black">
+      <h1>DEATH</h1>
+    </div>
+    <div class="w3-container">
+      <h5>As explained, her death is due to suicide, and it causes the final strike for Laertes to take the way of violence, and the another push for Hamlet to be aggresive. Her death is quite premature in both her life and the play, and implies a defeat of the purity in real world. </h5>
+    </div>
+  </div>
+</div>
+
+<!-- Laertes -->
+<div id="laertes" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom">
+    <div class="w3-container w3-black">
+      <span onclick="document.getElementById('laertes').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
+      <h1>WHO</h1>
+    </div>
+    <div class="w3-container">
+      <h5><b>Laertes</b> is Ophelia's older brother. He his kind, protector and loves Ophelia the most. He tries to advise her about Hamlet. </h5>
+    </div>
+    <div class="w3-container w3-black">
+      <h1>PERSONALITY</h1>
+    </div>
+    <div class="w3-container">
+      <h5>He seems to be emotionally strong, he loose his mind in front of Hamlet in her sister's funeral, tho. He follows his idea of rightness, and firmly confront Hamlet to death, just to discover the truth about Fortimbras. He's one of the sanest characters. </h5>
+    </div>
+    <div class="w3-container w3-black">
+      <h1>DEATH</h1>
+    </div>
+    <div class="w3-container">
+      <h5>He dies confronting Hamlet in a sword fight. While fighting, Hamlet speaks clearly to Laertes, trying to make him realizes he's being used. In the end, Hamlet kills Laertes and they share a moment of mutual understanding in the very end, just before Hamlet kills Fortimbras and dies.  </h5>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
