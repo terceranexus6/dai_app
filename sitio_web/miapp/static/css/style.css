@@ -1,0 +1,9 @@
+
+body,h1,h5 {font-family: "Raleway", sans-serif}
+body, html {height: 100%}
+.bgimg {
+    background-image: url('http://cinephiliamedia.files.wordpress.com/2013/12/hamlet-1.jpg');
+    min-height: 100%;
+    background-position: center;
+    background-size: cover;
+}
