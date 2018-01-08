@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+{% load staticfiles %}
+    <head>
+        <title>App de DAI</title>
+    </head>
+
+    <body>
+        <h1>¡Esta es una app para dai!</h1>
+        Añade un personaje: 
+
+      <form action="{% url 'nuevo_personaje' %}" method="post">
+   		<div class="form-group">
+   			{% csrf_token %}
+   			{{ form.as_p }}
+   			<input type="submit" value="Enviar" />
+   		</div>
+   	</form>
+
+    </body>
+
+</html>
