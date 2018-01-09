@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html>
 {% load staticfiles %}
+<link rel="stylesheet" href="{% static "css/forms.css" %}">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="{% static "js/formj.js" %}"></script>
     <head>
         <title>App de DAI</title>
     </head>
 
     <body>
         <h1>¡Esta es una app para dai!</h1>
-        Añade un personaje: 
+        Añade un personaje:
 
-      <form action="{% url 'nuevo_personaje' %}" method="post">
+      <form class="form-style-4" action="{% url 'nuevo_personaje' %}" method="post">
    		<div class="form-group">
    			{% csrf_token %}
    			{{ form.as_p }}

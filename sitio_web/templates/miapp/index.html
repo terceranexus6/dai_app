@@ -1,14 +1,24 @@
 <!DOCTYPE html>
 <html>
+{% load staticfiles %}
+<link rel="stylesheet" href="{% static "css/forms.css" %}">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="{% static "js/formj.js" %}"></script>
+
 
     <head>
-        <title>Rango</title>
+        <title>App para dai</title>
     </head>
 
     <body>
-        <h1>Rango says...</h1>
-        hello world! <strong>{{ boldmessage }}</strong><br />
-        <a href="/rango/about/">About</a><br />
+        <h1>para registro, login, log out...</h1>
+
+        <a href="{% url 'auth_login' %}">login</a> <br>
+        <a href="{% url 'registration_register' %}">register</a><br>
+        <a href="{% url 'auth_logout' %}?next=/rango/">logout</a><br><br>
+
+        {% block body_block %}{% endblock %}
+
     </body>
 
 </html>

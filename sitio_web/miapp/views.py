@@ -18,6 +18,7 @@ def index(request):
 #    }
 #    return render(request, "prueba.html", context)
 
+
 def nuevo_personaje(request):
 
    form = PersonajeForm()
